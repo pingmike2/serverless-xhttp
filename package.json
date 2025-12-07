@@ -1,14 +1,16 @@
 {
-  "name": "nodejs",
+  "name": "node-xhttp",
   "version": "1.0.0",
   "description": "nodejs",
-  "author": "",
+  "author": "eooce",
   "repository": "",
   "license": "MIT",
   "private": false,
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "dev": "node --expose-gc app.js",
+    "start": "node --expose-gc app.js",
+    "debug": "LOG_LEVEL=debug node --expose-gc app.js"
   },
   "dependencies": {
     "axios": "^1.9.0"
